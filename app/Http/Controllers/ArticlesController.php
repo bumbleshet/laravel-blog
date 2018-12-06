@@ -91,7 +91,7 @@ class ArticlesController extends Controller
        // $article->title = $inputs['title'];
        // $article->body = $inputs['body'];
        // $article->save();
-
+    //
        return redirect('articles');
     }
 }
