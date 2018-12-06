@@ -15,13 +15,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('articles', 'ArticlesController@index');
-Route::get('articles/create', 'ArticlesController@create');
-Route::post('articles', 'ArticlesController@store');
+Route::get('blogs', 'ArticlesController@index');
+Route::get('blogs/create', 'ArticlesController@create');
+Route::post('blogs', 'ArticlesController@store');
 
-Route::get('articles/tags/{category}', 'ArticlesController@tags');
-Route::get('articles/show/{id}', 'ArticlesController@show');
-Route::post('articles/show/{id}', 'ArticlesController@edit');
+Route::get('blogs/tags/{category}', 'ArticlesController@tags');
+Route::get('blogs/show/{id}', 'ArticlesController@show');
+Route::post('blogs/show/{id}', 'ArticlesController@edit');
 
 Auth::routes();
 
