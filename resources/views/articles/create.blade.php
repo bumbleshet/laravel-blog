@@ -8,7 +8,7 @@
 		@endforeach
 	</div>
 @endif
-{!! Form::open(['url' => 'articles']) !!}
+{!! Form::open(['url' => 'blogs']) !!}
     {!! Form::label('title', 'Title') !!}
 {!!Form::text('title', null, ['class' => 'form-control', 'placeholder' => 'ex. Article Title']) !!}
 
