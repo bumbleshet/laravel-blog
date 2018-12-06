@@ -56,7 +56,7 @@ class ArticlesController extends Controller
           ->withErrors($validator);
       }
     	Article::create($inputs);
-    	return redirect('articles');
+    	return redirect('blogs');
     }
 
     public function edit($id)
