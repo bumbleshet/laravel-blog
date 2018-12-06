@@ -43,9 +43,9 @@ class ArticlesController extends Controller
         'body' => 'required',
       ];
       $err_msg = [
-        'title.required' => 'Article must have a title',
-        'title.min' => 'Article Title must be atleast 3 characters.',
-        'body.required' => 'Aritlce body is required.',
+        'title.required' => 'Blog must have a title',
+        'title.min' => 'Blog Title must be atleast 3 characters.',
+        'body.required' => 'Blog body is required.',
       ];
       $validator = Validator::make(Request::all(), $rules, $err_msg);
 
@@ -56,7 +56,7 @@ class ArticlesController extends Controller
           ->withErrors($validator);
       }
     	Article::create($inputs);
-    	return redirect('blogs');
+    	return redirect('articles');
     }
 
     public function edit($id)
@@ -66,15 +66,15 @@ class ArticlesController extends Controller
         'body' => 'required',
       ];
       $err_msg = [
-        'title.required' => 'Article must have a title',
-        'title.min' => 'Article Title must be atleast 3 characters.',
-        'body.required' => 'Aritlce body is required.',
+        'title.required' => 'Blog must have a title',
+        'title.min' => 'Blog Title must be atleast 3 characters.',
+        'body.required' => 'Blog body is required.',
       ];
       $validator = Validator::make(Request::all(), $rules, $err_msg);
        $err_msg = [
-        'title.required' => 'Article must have a title',
-        'title.min' => 'Article Title must be atleast 3 characters.',
-        'body.required' => 'Aritlce body is required.',
+        'title.required' => 'Blog must have a title',
+        'title.min' => 'Blog Title must be atleast 3 characters.',
+        'body.required' => 'Blog body is required.',
       ];
       $validator = Validator::make(Request::all(), $rules, $err_msg);
 
@@ -92,6 +92,6 @@ class ArticlesController extends Controller
        // $article->body = $inputs['body'];
        // $article->save();
 
-       return redirect('blogs');
+       return redirect('articles');
     }
 }
