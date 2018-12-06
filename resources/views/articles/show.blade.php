@@ -13,7 +13,7 @@
 {!! Form::open()!!}
     
     {!! Form::label('title', 'Title') !!}
-    {!! Form::text('title', $articles->title, ['class' => 'form-control', 'placeholder' => ' ex. Article Title']) !!}
+    {!! Form::text('title', $articles->title, ['class' => 'form-control', 'placeholder' => ' ex. Blog Title']) !!}
 
 <div class="form-group">
     {!! Form::label('body', 'Body: ') !!}
